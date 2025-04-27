@@ -1,8 +1,7 @@
-// src/components/url/UrlListTable.jsx
 import React from 'react';
 
 const UrlListTable = ({ urls, onCopy, onDelete, deleting }) => {
-  // Helper to get the full redirect URL
+
   const getFullRedirectUrl = (shortCode) => `https://localhost:7263/r/${shortCode}`;
 
   return (

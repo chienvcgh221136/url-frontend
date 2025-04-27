@@ -1,4 +1,3 @@
-// src/components/UrlList.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
@@ -55,7 +54,6 @@ const UrlList = () => {
       const response = await axios.delete(`${API_BASE_URL}/${urlId}`);
       
       if (response.data.success) {
-        // Update URL list after successful deletion
         setUrls(urls.filter(url => (url.id || url._id) !== urlId));
         toast.success('URL deleted successfully!');
         closeDeleteModal();
@@ -137,7 +135,6 @@ const UrlList = () => {
         </table>
       )}
 
-      {/* Delete confirmation modal */}
       {showDeleteModal && urlToDelete && (
         <DeleteConfirmModal
           isDeleting={deleting === (urlToDelete.id || urlToDelete._id)}

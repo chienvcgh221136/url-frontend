@@ -1,4 +1,3 @@
-// src/pages/HistoryPage.jsx
 import React from 'react';
 import UrlHistoryContainer from '../containers/UrlHistoryContainer';
 

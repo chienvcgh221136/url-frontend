@@ -1,10 +1,9 @@
-// src/containers/UrlShortenerContainer.jsx
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import ShortenUrlForm from '../components/url/ShortenUrlForm';
 import UrlResultDisplay from '../components/url/UrlResultDisplay';
 import urlService from '../services/urlService';
-import { copyToClipboard } from '../utils/clipboard'; // Fixed import
+import { copyToClipboard } from '../utils/clipboard'; 
 
 const UrlShortenerContainer = () => {
   const [originalUrl, setOriginalUrl] = useState('');

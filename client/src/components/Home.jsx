@@ -1,10 +1,7 @@
-// src/components/Home.js
 import React, { useState } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
-// If you install this library: npm install qrcode.react
-// import { QRCode } from 'react-qrcode-logo'; // or
-// import QRCode from 'qrcode.react'; 
+
 
 const API_BASE_URL = 'https://localhost:7263/api/url';
 

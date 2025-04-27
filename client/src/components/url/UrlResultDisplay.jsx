@@ -1,4 +1,3 @@
-// src/components/url/UrlResultDisplay.jsx
 import React from 'react';
 
 const UrlResultDisplay = ({ shortUrl, showQRCode, setShowQRCode, onCopy }) => {

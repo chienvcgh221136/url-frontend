@@ -1,4 +1,3 @@
-// src/utils/clipboard.js
 import { toast } from 'react-toastify';
 
 export const copyToClipboard = (text) => {

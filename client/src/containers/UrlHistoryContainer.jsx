@@ -1,4 +1,3 @@
-// src/containers/UrlHistoryContainer.jsx
 import React, { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import UrlListTable from '../components/url/UrlListTable';
@@ -49,7 +48,7 @@ const UrlHistoryContainer = () => {
     if (!urlToDelete) return;
     
     try {
-      // Use id or _id as appropriate
+
       const urlId = urlToDelete.id || urlToDelete._id;
       setDeleting(urlId);
       const response = await urlService.deleteUrl(urlId);

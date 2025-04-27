@@ -1,25 +1,24 @@
-// src/components/common/DeleteConfirmModal.jsx
 import React from 'react';
 
 const DeleteConfirmModal = ({ isDeleting, onCancel, onConfirm }) => {
   return (
     <div className="simple-modal-overlay">
       <div className="simple-modal">
-        <p>Bạn có muốn xóa không?</p>
+        <p>Do you want to delete?</p>
         <div className="simple-modal-buttons">
           <button 
             className="simple-btn btn-no" 
             onClick={onCancel}
             disabled={isDeleting}
           >
-            Không
+            No
           </button>
           <button 
             className="simple-btn btn-yes" 
             onClick={onConfirm}
             disabled={isDeleting}
           >
-            {isDeleting ? 'Đang xóa...' : 'Có'}
+            {isDeleting ? 'Deleting...' : 'Yes'}
           </button>
         </div>
       </div>
